@@ -19,12 +19,8 @@ const Rockets = () => {
       <div className="right">
         <h4>{rocket.rocketName}</h4>
         <p>{rocket.rocketDescription}</p>
-        <button
-          type="button"
-          className="btn btn-primary btn-md"
-        >
+        <button type="button" className="btn btn-primary btn-md">
           Reserve Rocket
-
         </button>
       </div>
     </main>
