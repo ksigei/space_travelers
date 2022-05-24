@@ -9,6 +9,7 @@ function Header() {
       <Link className="icon" to="/">
         <img src={logoUrl} alt="planet" />
       </Link>
+      <Link to="/missions">Missions</Link>
 
     </nav>
   );

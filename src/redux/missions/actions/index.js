@@ -1,23 +1,24 @@
 /* eslint-disable array-callback-return */
 import axios from 'axios';
 
-export const GET_MISSIONS = 'GET_MISSIONS';
+export const GET_MISSIONS = 'SPACE-TRAVELERS/missions/GET_MISSIONS';
 
 const getMissionsAction = () => async (dispatch) => {
-  const mission = await axios.get('https://api.spacexdata.com/v3/missions');
-  const data = await mission.data;
-  const missionArr = [];
-  data.map((item) => {
-    missionArr.push({
-      mission_id: item.mission_id,
-      mission_name: item.mission_name,
-      description: item.description,
+  const missions = await axios.get('https://api.spacexdata.com/v3/missions');
+  const data = await missions.data;
+  const missionsArray = [];
+  data.map((mission) => {
+    missionsArray.push({
+      missionId: mission.mission_id,
+      missionName: mission.mission_name,
+      missionDescription: mission.description,
     });
     dispatch({
       type: GET_MISSIONS,
-      payload: mission,
+      payload: missionsArray,
     });
   });
 };
 
 export default getMissionsAction;
+
