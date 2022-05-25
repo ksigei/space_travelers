@@ -2,8 +2,10 @@
 import axios from 'axios';
 
 export const GET_ROCKETS = 'SPACE-TRAVELERS/rockets/GET_ROCKETS';
+export const BOOOK_ROCKET = 'SPACE-TRAVELERS/rockets/BOOOK_ROCKET';
+export const UNBOOOK_ROCKET = 'SPACE-TRAVELERS/rockets/UNBOOOK_ROCKET';
 
-const getRocketsAction = () => async (dispatch) => {
+export const getRocketsAction = () => async (dispatch) => {
   const rockets = await axios.get('https://api.spacexdata.com/v3/rockets');
   const data = await rockets.data;
   const rocketsArray = [];
@@ -21,5 +23,13 @@ const getRocketsAction = () => async (dispatch) => {
     });
   });
 };
+export const bookRocket = (payload) => ({
+  type: BOOOK_ROCKET,
+  payload,
+});
 
-export default getRocketsAction;
+export const unbookRocket = (payload) => ({
+  type: UNBOOOK_ROCKET,
+  payload,
+});
+export default { getRocketsAction, bookRocket, unbookRocket };
