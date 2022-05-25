@@ -1,20 +1,19 @@
 .navbox {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 17vh;
   align-items: center;
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 20px;
 }
 
-.icon{
+.icon {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
 
-.icon h2{
+.icon h2 {
   margin-left: 20px;
   color: #000;
 }
@@ -23,11 +22,11 @@ nav .icon img {
   height: 15vh;
 }
 
-.link{
+.link {
   text-decoration: none;
   margin: 0 15px;
 }
 
-.link.active{
+.link.active {
   text-decoration: underline;
 }
