@@ -31,4 +31,10 @@ td:nth-child(3) {
 .status {
   display: flex;
   gap: 2vw;
+  justify-content: center;
+}
+
+.active-btn{
+  background-color: #18a2b8;
+  color: #fff;
 }
