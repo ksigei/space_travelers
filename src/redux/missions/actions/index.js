@@ -3,6 +3,7 @@ import axios from 'axios';
 
 export const GET_MISSIONS = 'SPACE-TRAVELERS/missions/GET_MISSIONS';
 export const JOIN_MISSIONS = 'SPACE-TRAVELERS/missions/JOIN_MISSIONS';
+export const LEAVE_MISSIONS = 'SPACE-TRAVELERS/missions/LEAVE_MISSIONS';
 
 export const getMissionsAction = () => async (dispatch) => {
   const missions = await axios.get('https://api.spacexdata.com/v3/missions');
@@ -26,4 +27,9 @@ export const joinMissionAction = (payload) => ({
   payload,
 });
 
-export default { getMissionsAction, joinMissionAction };
+export const leaveMissionAction = (payload) => ({
+  type: LEAVE_MISSIONS,
+  payload,
+});
+
+export default { getMissionsAction, joinMissionAction, leaveMissionAction };

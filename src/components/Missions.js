@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getMissionsAction, joinMissionAction } from '../redux/missions/actions';
+import { getMissionsAction, joinMissionAction, leaveMissionAction } from '../redux/missions/actions';
 import './css/Mission.css';
 
 const Missions = () => {
@@ -40,7 +40,7 @@ const Missions = () => {
                       <button type="button" className="btn btn-secondary btn-sm active-btn">
                         ACTIVE MEMBER
                       </button>
-                      <button type="button" className="btn btn-outline-danger btn-sm">
+                      <button type="button" className="btn btn-outline-danger btn-sm" onClick={() => dispatch(leaveMissionAction(mission.missionId))}>
                         Leave Mission
                       </button>
                     </>

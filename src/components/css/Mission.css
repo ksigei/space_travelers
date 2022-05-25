@@ -35,6 +35,6 @@ td:nth-child(3) {
 }
 
 .active-btn{
-  background-color: #18a2b8;
+  background-color: #18a2b8 !important;
   color: #fff;
 }

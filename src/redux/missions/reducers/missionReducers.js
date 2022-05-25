@@ -1,7 +1,4 @@
-/* eslint-disable array-callback-return */
-/* eslint-disable consistent-return */
-/* eslint-disable no-case-declarations */
-import { GET_MISSIONS, JOIN_MISSIONS } from '../actions';
+import { GET_MISSIONS, JOIN_MISSIONS, LEAVE_MISSIONS } from '../actions';
 
 const initialState = {
   missions: [],
@@ -15,6 +12,13 @@ const missionReducers = (state = initialState.missions, action) => {
       return state.map((mission) => {
         if (mission.missionId === action.payload) {
           return { ...mission, missionJoined: true };
+        }
+        return mission;
+      });
+    case LEAVE_MISSIONS:
+      return state.map((mission) => {
+        if (mission.missionId === action.payload) {
+          return { ...mission, missionJoined: false };
         }
         return mission;
       });
