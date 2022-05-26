@@ -18,34 +18,26 @@ const Rockets = () => {
       </div>
       <div className="right">
         <h4>{rocket.rocketName}</h4>
-        <p>{rocket.rocketDescription}</p>
+        <p>
+          {rocket.rocketBooked && <span><button type="button" className="btn btn-primary btn-sm active-btn" style={{ marginRight: `${5}px` }}>Reserved</button></span>}
+          {rocket.rocketDescription}
+        </p>
         {!rocket.rocketBooked ? (
-          <>
-            <button type="button" className="btn btn-secondary btn-sm">
-              Not reserved
-            </button>
-            <button
-              type="button"
-              className="btn btn-outline-secondary btn-sm"
-              onClick={() => dispatch(bookRocket(rocket.rocketId))}
-            >
-              Reserve Rocket
-
-            </button>
-          </>
+          <button
+            type="button"
+            className="btn btn-primary btn-sm"
+            onClick={() => dispatch(bookRocket(rocket.rocketId))}
+          >
+            Reserve Rocket
+          </button>
         ) : (
-          <>
-            <button type="button" className="btn btn-secondary btn-sm active-btn">
-              Reserved
-            </button>
-            <button
-              type="button"
-              className="btn btn-outline-danger btn-sm"
-              onClick={() => dispatch(unbookRocket(rocket.rocketId))}
-            >
-              Cancel reservation
-            </button>
-          </>
+          <button
+            type="button"
+            className="btn btn-outline-secondary btn-sm"
+            onClick={() => dispatch(unbookRocket(rocket.rocketId))}
+          >
+            Cancel reservation
+          </button>
         )}
       </div>
     </main>
