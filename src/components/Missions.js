@@ -5,10 +5,12 @@ import './css/Mission.css';
 
 const Missions = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getMissionsAction());
-  }, []);
   const missions = useSelector((state) => state.missionReducers);
+  useEffect(() => {
+    if (missions.length === 0) {
+      dispatch(getMissionsAction());
+    }
+  }, []);
   return (
     <main>
       <table>

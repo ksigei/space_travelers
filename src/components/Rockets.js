@@ -5,10 +5,12 @@ import './css/Rockets.css';
 
 const Rockets = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getRocketsAction());
-  }, []);
   const rockets = useSelector((state) => state.rocketReducers);
+  useEffect(() => {
+    if (rockets.length === 0) {
+      dispatch(getRocketsAction());
+    }
+  }, []);
   return rockets.map((rocket) => (
     <main className="box" key={rocket.rocketId}>
       <div className="left">
