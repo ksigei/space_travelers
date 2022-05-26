@@ -7,6 +7,7 @@ function MyProfile() {
   /* eslint-enable */
   return (
     <div>
+      <h3>Reserved Rockets</h3>
       {reservedRockets.map((rocket) => (
         <div key={rocket.id}>
           <h3>{rocket.rocketName}</h3>
