@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<h3>
+  My Missions
+</h3>
+`;
+
+exports[`check if we have h3 tag 1`] = `
+<h3>
+  My Missions
+</h3>
+`;
+
+exports[`matches snapshot 1`] = `
+<tr>
+  <th>
+    Mission
+  </th>
+  <th>
+    Description
+  </th>
+  <th>
+    Status
+  </th>
+</tr>
+`;
