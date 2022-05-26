@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+## Space Travelers' Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+* [Contributing](#contributing)
+* [Authors](#author)
+* [Acknowledgements](#acknowledgements)
 
-In the project directory, you can run:
+## About Project
 
-### `npm start`
+"Space Traveler's Hub" is A web application that provides commercial and scientific space travelling services, We are working with real live data from the SpaceX API. The application will allow users to book rockets and join selected space missions.
+The Space Travelers' Hub consists of Rockets, Missions, and the My Profile section.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## [Live Demo - Firebase](https://space-travelers-s-hub.web.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Built With
 
-### `npm test`
+* ReactJS
+* Redux
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+* Clone this repo <https://github.com/ksigei/space_travelers.git>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    git clone https://github.com/ksigei/space_travelers.git
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Navigate to SpaceTravelers folder/directory
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    cd folder-name
+    ```
 
-### `npm run eject`
+* On the comandline, at the project's root, run ```npm install``` to install app dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Next, run ```npm start``` which will run the app in the development mode.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* ALTERNATIVELY
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  * Just run ```npm run build``` which will build the project and generate output files into the ```build``` directory.
 
-## Learn More
+  * Go to ```build``` directory and manually open ```index.html``` to interact with the app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Feel free to check the [issues page](../../issues)
 
-### Analyzing the Bundle Size
+  1. Fork the Project
+  2. Create your Feature Branch (`git checkout -b feature/newFeature`)
+  3. Commit your Changes (`git commit -m 'Add some newFeature'`)
+  4. Push to the Branch (`git push -u origin feature/newFeature`)
+  5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Authors
 
-### Making a Progressive Web App
+👤 **Hamza Anwar**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- GitHub: [@HamzaAnwar1998](https://github.com/HamzaAnwar1998/)
+- Twitter: [@anwarhamza919](https://twitter.com/anwarhamza919/)
+- LinkedIn: [Hamza Anwar](https://www.linkedin.com/in/hamza-anwar75)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+👤 **Sigei Kiprono**
 
-### Deployment
+- GitHub: [@ksigei](https://github.com/EzekielUtshudi)
+- Twitter: [@_kipronojaphet](https://twitter.com/_kipronojaphet)
+- LinkedIn: [Kiprono Japhet](https://www.linkedin.com/in/kiprono-japhet/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgements
 
-### `npm run build` fails to minify
+* [ReactJS Organization](https://reactjs.org/) for the amazing [Documentation](https://reactjs.org/docs/getting-started.html) on React.
+* [Redux Organization](https://redux.js.org/) for the amazing [Redux Essentials Tutorial](https://redux.js.org/tutorials/essentials/part-1-overview-concepts) on React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Show your support
+
+Give a ⭐️ if you like this project!
