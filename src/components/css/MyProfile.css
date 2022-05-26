@@ -1,0 +1,21 @@
+.reserved-box {
+  width: 100%;
+  display: flex;
+}
+
+.reserved-box .missions,
+.reserved-box .rockets {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.mission,
+.rocket {
+  border: 1px solid #e4e4e4;
+  padding: 7px;
+  font-weight: 600;
+}
+
+h3 {
+  margin-bottom: 7px;
+}
